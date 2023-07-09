@@ -3,5 +3,5 @@
 
 ## Example output:
 <div style="text-align:center">
-<img src="./resources/output.png">
+<img src="./resources/output.png" text-align="center">
 </div>
