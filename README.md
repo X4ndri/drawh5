@@ -21,11 +21,14 @@ https://github.com/X4ndri/drawh5.git
 pip install -r requirements
 pip istall -e .
 ```
+#### Note: This package is built on top of the h5py package, for more info:  h5py.readthedocs.io
+
 ## Usage:
 ### CLI:
 ```bash
 drawh5 path_to_h5_file
 ```
+
 ### Python scripting
 #### Can pass a file directory as input
 ```python

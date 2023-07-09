@@ -1,4 +1,4 @@
-./dist
-./dist/*
-./.gitignore.
+
 .gitignore.
+dist/drawh5-0.0.1-py3-none-any.whl
+dist/*
