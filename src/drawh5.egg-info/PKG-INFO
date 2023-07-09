@@ -1,3 +1,16 @@
+Metadata-Version: 2.1
+Name: drawh5
+Version: 0.0.1
+Summary: Draws a tree of a h5 file for easy visualization
+Author: X4ndri
+Project-URL: Homepage, https://github.com/x4ndri/drawh5
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
 # drawh5: visualize .h5 files structure  
 ### Quickly visualize the entire structure of h5 files with information about dataset sizes and group relationships. This is a useful tool especially when using large h5 files.
 

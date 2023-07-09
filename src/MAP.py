@@ -40,8 +40,8 @@ class MAP():
             else:
                 info = obj.__class__.__name__
             # 
-            print(tempv)
-            print(f" {temph} {self.levels[i][j]} {Style.RESET_ALL} <-> {info}")
+            print(tempv+'  ')
+            print(f" {temph} {self.levels[i][j]} {Style.RESET_ALL} <-> {info}  ")
         print('')
 
 if __name__ == '__main__':
