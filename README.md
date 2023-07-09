@@ -9,6 +9,18 @@
   <img src="./resources/output.png" alt="Sublime's custom image"/>
 </p>
 
+## Installation:
+#### Clone:
+```bash
+https://github.com/X4ndri/drawh5.git
+```
+
+#### Using pip
+```bash
+# install requirements
+pip install -r requirements
+pip istall -e .
+```
 ## Usage:
 ### CLI:
 ```bash
