@@ -1,4 +1,6 @@
-import h5py 
+"""@author ahmad
+@created 2023-07-00
+"""
 from colorama import Fore, Back, Style
 class MAP():
     
@@ -15,21 +17,22 @@ class MAP():
         self.levels = [i.split('/') for i in self.names]
         self.lengths = [len(i) for i in self.levels]
         self.lengths_functional = [i-1 for i in self.lengths]
+        self.lengths_functional.append(0)
 
     def draw(self, pad='------'):
         tab = '\t'
         tabpipe = tab + '|'
         pipetab = '|' + tab
 
-        for i, j in enumerate(self.lengths_functional):
+        for i, j in enumerate(self.lengths_functional[:-1]):
             # padding vertically
             if j == 0:
                 tempv = ''
-            if j>0 and self.lengths_functional[i+1] > j:
+            if j>0 and self.lengths_functional[i+1] <= j:
                 tempv = (j-1)*tab + '|'
-            if j>0 and self.lengths_functional[i+1] >1:
-                tempv = '|' + (j-1)*tab + '|'
-            
+            if j>0 and self.lengths_functional[i+1] >j:
+                # tempv = '|' + (j-1)*tab + '|'
+                tempv = '|' + (j-1)*tabpipe
             # padding horizontally
             temph = Back.RESET + Fore.BLUE+(j-1)*tab+ pad if j > 0 else Back.RED+'*'
             
